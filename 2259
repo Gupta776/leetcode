@@ -1,0 +1,38 @@
+#presenting a few different ways of codes
+
+# class Solution:
+#     def removeDigit(self, number: str, digit: str) -> str:
+#         self.number = number
+#         self.digit = digit
+#         list_num = []
+#         for i in range(len(self.number)):
+#             if self.number[i] == self.digit:
+#                 x = self.number[:i] + self.number[i+1 : len(self.number) ]
+#                 list_num.append(int(x))
+#         return str(max(list_num))
+                
+# class Solution:
+#     def removeDigit(self, number: str, digit: str) -> str:
+#         list_num = [int(number[:i] + number[i+1:]) for i in range(len(number)) if number[i] == digit]
+#         return str(max(list_num))
+            
+# class Solution:
+#     def removeDigit(self, number: str, digit: str) -> str:
+#         maxNum = 0
+#         for i in range(len(number)):
+#             if(number[i]==digit):
+#                 maxNum = max(maxNum,int(number[:i]+number[i+1:]))
+#         return str(maxNum)
+
+class Solution:
+    def removeDigit(self, number: str, digit: str) -> str:
+        max_num=0
+        for i in range(0,len(number)):
+            if number[i]==digit:
+                max_num=max(int(number[:i]+number[i+1:]), max_num)
+        return str(max_num)
+
+
+# class Solution:
+#     def removeDigit(self, number: str, digit: str) -> str:
+#         return str(max((int(number[:i] + number[i+1:]) for i in range(len(number)) if number[i] == digit), default=0))
