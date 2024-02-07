@@ -1,6 +1,6 @@
 # leetcode
 problem
 lkasjhflsss
-jnjn
+jn
 kkk,
 aslkdfjlas
