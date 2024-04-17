@@ -9,6 +9,6 @@ def leap_year_validation(year):
 
 year = 2024
 if leap_year_validation(year):
-    print(f"{year} - leap year")
+    print(f"{year} - leap year") 
 else:
     print(f"{year} - not a leap year.")
