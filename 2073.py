@@ -15,3 +15,4 @@ class Solution:
                         return time
         return time
 
+
