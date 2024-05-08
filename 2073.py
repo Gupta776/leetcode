@@ -11,7 +11,7 @@ class Solution:
                     tickets[j] -= 1
                     # v += 1
                     time += 1
-                    if tickets[k] == 0:
+                    if tickets[k] == 0: 
                         return time
         return time
 
