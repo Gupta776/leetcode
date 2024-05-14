@@ -5,8 +5,7 @@ def leap_year_validation(year):
         return True
     else:
         return False
-
-
+        
 year = 2024
 if leap_year_validation(year):
     print(f"{year} - leap year") 
